@@ -66,5 +66,5 @@ The Specs
 
 
 
-<img width="504" height="592" alt="image" src="https://github.com/user-attachments/assets/908ae682-0505-487a-b465-8e612a8793bd" />
+
 
