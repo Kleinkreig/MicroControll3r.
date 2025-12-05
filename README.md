@@ -31,7 +31,7 @@ The Specs
 
 -   **Power:** USB 5V
 
-
+NOTE: I did not want to create a case as I might buy more componenets later. I am also deciding what software/code to run. This is also my first experience with CAD and designing PCBs so judge this project as just a test.
 
 
 <img width="504" height="592" alt="image" src="https://github.com/user-attachments/assets/ee6a229d-5c64-4639-aa4a-f0245034a140" />
