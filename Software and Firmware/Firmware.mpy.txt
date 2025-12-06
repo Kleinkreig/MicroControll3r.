@@ -1,0 +1,60 @@
+# MicroPython firmware for Seeed Studio XIAO RP2040 acting as USB HID keyboard
+# 4 buttons trigger configurable macros (sequences of key chords), LEDs light up on press.
+# Assumptions:
+# - Requires MicroPython v1.23 or later with USB support.
+# - Install USB libraries if needed: mip.install("micropython-usb-device-keyboard") or equivalent.
+# - LEDs chained with DIN connected to GPIO3 (NeoPixel).
+# - Buttons connected to GPIO26-29 (active-low, pulled high internally).
+# - Macros loaded from 'macros.json' (e.g., {"macros": [[[4]], [[5]], [[6]], [[7]]] } for 'a','b','c','d').
+# - Each macro is a list of steps, each step a list of HID codes (e.g., [[224,4]] for Ctrl+A, 224=LEFT_CTRL).
+# - If file missing, defaults to single keys.
+# - Edit macros.json via USB mass storage to change macros (use any text editor GUI).
+# - HID keycodes: https://usb.org/sites/default/files/hut1_5.pdf (keys 4-29=a-z, modifiers 224-231).
+# - On press: LED on, execute macro (press/release each step with small delay), on release: LED off.
+
+import machine
+import time
+import ujson
+from neopixel import NeoPixel
+from usb.device.keyboard import Keyboard  # From installed library
+
+# Initialize keyboard
+k = Keyboard()
+
+# Initialize NeoPixel: GPIO3, 4 LEDs
+led_pin = machine.Pin(3, machine.Pin.OUT)
+np = NeoPixel(led_pin, 4)
+
+# Define button pins (GPIO26-29)
+key_pins = [26, 27, 28, 29]
+keys = [machine.Pin(pin, machine.Pin.IN, machine.Pin.PULL_UP) for pin in key_pins]
+
+# Load macros from file or default
+try:
+    with open('macros.json', 'r') as f:
+        config = ujson.load(f)
+        macros = config['macros']
+except (OSError, ValueError, KeyError):
+    macros = [[[4]], [[5]], [[6]], [[7]]]  # Default: a, b, c, d
+
+# Track button states (1 = released)
+states = [1] * 4
+
+# Main loop
+while True:
+    for i in range(4):
+        val = keys[i].value()
+        if val == 0 and states[i] == 1:  # Pressed
+            np[i] = (0, 255, 0)  # Green
+            np.write()
+            # Execute macro
+            for step in macros[i]:
+                k.press(*step)
+                time.sleep(0.02)  # Small delay for typing simulation
+                k.release_all()
+            states[i] = 0
+        elif val == 1 and states[i] == 0:  # Released
+            np[i] = (0, 0, 0)    # Off
+            np.write()
+            states[i] = 1
+    time.sleep(0.01)  # Debounce delay
