@@ -31,7 +31,16 @@ The Specs
 
 -   **Power:** USB 5V
 
-NOTE: I did not want to create a case as I might buy more componenets later. I am also deciding what software/code to run. This is also my first experience with CAD and designing PCBs so judge this project as just a test.
+Required Parts/Parts That I Need From HackClub
+----------------------------------------------
+-  Seeed XIAO RP2040 (x1)
+-  SK6812 MINI-E LEDs (x4)
+-  Blank DSA keycaps (x4)
+-  MX-Style switches (x4)
+-  Soldering Iron (x1)
+  (I would also require the keycaps and switches to be 3D printed since I do not own a 3D printer)
+
+NOTE: I did not want to create a case as I might buy more componenets later. This is also my first experience with CAD and designing PCBs so judge this project as just a test.
 
 
 <img width="504" height="592" alt="image" src="https://github.com/user-attachments/assets/ee6a229d-5c64-4639-aa4a-f0245034a140" />
