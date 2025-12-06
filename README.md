@@ -1,4 +1,4 @@
-MicroControll3r.
+MicroControll3r
 ================
 
 > **Built for HackClub Blueprint**
