@@ -15,9 +15,9 @@ Features
 
 -   **Modular & Swappable:** Don't replace the board---just upgrade it. You are able to use ESPs, Arduinos and many other CPUs in the XIAO family.
 
-    -   *Need Wi-Fi?* Snap in an ESP32 module.
+    -   *Need Wi-Fi?* Add in an ESP32 module.
 
-    -   *Need output?* Add an OLED or E-Ink display.
+    -   *Need output?* Add an OLED.
 
     -   *Need feedback?* Swap in a haptic motor driver.
 
