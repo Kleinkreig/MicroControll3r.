@@ -67,7 +67,6 @@ NOTE: I did not want to create a case as I might buy more componenets later. Thi
 
 
 
-<img width="616" height="670" alt="Screenshot 2025-12-06 212258" src="https://github.com/user-attachments/assets/91633b8f-06d2-442f-81b9-a06f8f710b55" />
 
 
 
