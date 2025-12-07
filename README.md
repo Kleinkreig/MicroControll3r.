@@ -50,6 +50,7 @@ NOTE: I did not want to create a case as I might buy more componenets later. Thi
 
 
 
+<img width="814" height="604" alt="Screenshot 2025-12-06 155036" src="https://github.com/user-attachments/assets/c2923304-2821-454a-880d-01fc203ae9f9" />
 
 
 
@@ -58,6 +59,7 @@ NOTE: I did not want to create a case as I might buy more componenets later. Thi
 
 
 
+<img width="616" height="670" alt="Screenshot 2025-12-06 212258" src="https://github.com/user-attachments/assets/225f13f3-62e4-4c25-a776-6fc760873add" />
 
 
 
@@ -65,6 +67,7 @@ NOTE: I did not want to create a case as I might buy more componenets later. Thi
 
 
 
+<img width="616" height="670" alt="Screenshot 2025-12-06 212258" src="https://github.com/user-attachments/assets/91633b8f-06d2-442f-81b9-a06f8f710b55" />
 
 
 
