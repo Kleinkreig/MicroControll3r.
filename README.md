@@ -24,7 +24,7 @@ Required Parts
 ----------------------------------------------
 -  Seeed XIAO RP2040 (x1)
 -  SK6812 MINI-E LEDs (x4)
--  Blank DSA keycaps (x4)
+-  Blank DSA keycaps/Any Mechanical Keyboard Keycap (x4)
 -  MX-Style switches (x4)
 -  Soldering Iron (x1)
 
