@@ -28,7 +28,7 @@ Required Parts
 -  MX-Style switches (x4)
 -  Soldering Iron (x1)
 
-NOTE: I did not want to create a case as I might buy more componenets later. This is also my first experience with CAD and designing PCBs so judge this project as just a test.
+NOTE: I did not want to create a case as I prefer it case-less. This is also my first experience with CAD and designing PCBs so judge this project as just a test.
 
 
 <img width="504" height="592" alt="image" src="https://github.com/user-attachments/assets/ee6a229d-5c64-4639-aa4a-f0245034a140" />
